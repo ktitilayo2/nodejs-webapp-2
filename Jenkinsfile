@@ -6,7 +6,7 @@ pipeline {
      }
     environment {
     ACR_NAME = "karoacr"
-    registyUrl = "karoacr.azurecr.io"
+    registyUrl = "kentitilayo2acr.azurecr.io"
     IMAGE_NAME = "nodejswebapp"
     IMAGE_TAG = "v1.0.0"
     registryCredential  = "karo-acr"
@@ -14,7 +14,7 @@ pipeline {
     stages { 
         stage('SCM Checkout') {
             steps{
-           git branch: 'main', url: 'https://github.com/ooghenekaro/nodejs-webapp-2.git'
+           git branch: 'main', url: 'https://github.com/ktitilayo2/nodejs-webapp-2.git'
             }
         }
         // run sonarqube test
